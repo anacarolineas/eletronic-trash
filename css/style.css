@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    line-height:  1.5;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+.v-header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navigation{
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:1;
+  }
+
+  .navbar-right {
+      position: absolute;
+      right: 0;
+      padding-right: 5px;
+  }
+
+  .nav-link {
+      color: #bef0bb;
+  }
+
+  .video-container {
+    top: 0;  
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .video-bg{
+    width:100%;
+    opacity: 0.35;
+  }
+
+  .header-overlay {
+    height: 100vh;
+    width: 100%;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0;
+  }
+
+  .about {
+      position: relative;
+      padding-top: 20px;
+      background-color: #bef0bb;
+  }
+
+  .map {
+    margin: 0;
+  }
+  
