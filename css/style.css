@@ -76,6 +76,10 @@ body {
     margin: 0;
   }
 
+  #form-cadastro {
+    margin-bottom: 20px;
+  }
+
   .img-lixo-footer {
     width: 100%;
     height: 30vh;

@@ -100,6 +100,52 @@
         </section>
         <!--end mapa-->
 
+        <!--saiba+ -->
+        <section class="saiba-mais m-3">
+            <div class="col-md-12 text-center">
+                <h2>Saiba +<br><strong>Notícias e curiosidades</strong></h2>
+            </div>
+            
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-200">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-primary">World</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Featured post</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#">Continue reading</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Post title</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#">Continue reading</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+
+            <div class="col-6">
+
+            </div>
+        </section>
+
+        <!--end saiba+ -->
+
         <!--cadastro-->
         <section class="cadastro">
             <div class="container">
@@ -108,33 +154,55 @@
                         <h2>Sua empresa recolhe lixo eletrônico?<br><strong>Cadastre-se em nosso site!</strong></h2>
                         <p class="lead">Preencha o formulário abaixo para cadastro.</p>
 
-                        <div class="col-md-12">
-                        <form class="">
+                        <form id="form-cadastro">
+                            <div class="form-group">
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <input class="form-control" name="name" type="text" placeholder="Nome da empresa">
+                                <div class="col-12">
+                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa">
+                                    </div>
+                                </div>  
+                            </div>                              
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <input class="form-control" name="email" type="email" placeholder="E-mail">
+                                    </div>                    
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <input class="form-control" type="tel" name="telefone" placeholder="Telefone">
+                                    </div>
                                 </div>
-                            </div>                          
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input class="form-control" name="email" type="email" placeholder="E-mail">
-                                </div>                    
-                                <div class="col-sm-6 col-lg-6">
-                                    <input class="form-control" name="telefone" placeholder="Telefone">
+                            </div>    
+
+                            <label class="text-left">Localização:</label>  
+                            <div class="form-group">
+                                <div class="row">                           
+                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input class="form-control" name="latituide" type="text" placeholder="Latitude">
+                                    </div>                    
+                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input class="form-control" name="longitude" type="text" placeholder="Longitude">
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input class="form-control" name="longitude" type="text" placeholder="Número">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input class="form-control" name="latituide" type="text" placeholder="Latitude">
-                                </div>                    
-                                <div class="col-sm-6 col-lg-6">
-                                    <input class="form-control" name="longitude" type="text" placeholder="Longitude">
-                                </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="uploadImgLogo">Logo da empresa.</label>
+                                <input type="file" class="form-control-file" id="uploadImgLogo">
+                            </div>
+
+                            <div>
+                                <button class="btn btn-success">Enviar</button>
                             </div>
                            
                         </form>
-                    </div>
-
                     </div>
                    
                 </div>
