@@ -28,10 +28,19 @@
                 </div>
             </div>
         </nav>
+
         <div class="video-container">  
-            <video class="video-bg" src="video/video-home.mov" autoplay="true" loop="true"></video>         
+            <video class="video-bg" src="video/video-home.mp4" autoplay="true" loop="true"></video>         
         </div>
-        
+
+        <div class="row text-center">
+            <div class="header-content">
+                <h1>Tem lixo eletrônico em casa e não sabe como realizar o descarte?<h1>
+                <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
+                <button class="btn btn-success">Buscar</button>
+            </div> 
+        </div>
+             
     </header>
 
     <main>
@@ -135,9 +144,12 @@
     </main>
 
     <footer>
-
+    <!-- Copyright -->
+        <div class="page-footer text-center py-3">© 2020 Copyright:
+            <a href="#"> LixoEletrônicoAqui.com</a>
+        </div>
+        <!-- Copyright -->
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
