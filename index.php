@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel-noticias.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 
-<body>  
-    <header>   
+<body>
+    <header>
         <nav class="navbar navbar-expand-lg navigation border-bottom">
             <a class="navbar-brand" href="#"><img height="50px" src="imagens/icon-trash.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,29 +25,29 @@
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">Sobre nós</a>
                     <a class="nav-item nav-link" href="#">Locais</a>
-                    <a class="nav-item nav-link" href="#">Saiba+</a>
-                    <a class="nav-item nav-link" href="#">Cadastre-se</a>
+                    <a class="nav-item nav-link" href="#saibaMais">Saiba+</a>
+                    <a class="nav-item nav-link" href="#cadastro">Cadastre-se</a>
                 </div>
             </div>
         </nav>
 
-        <div class="video-container">  
-            <video class="video-bg" src="video/video-home.mp4" autoplay="true" loop="true"></video>         
+        <div class="video-container">
+            <video class="video-bg" src="video/video-home.mp4" autoplay="true" loop="true"></video>
         </div>
 
         <div class="row text-center">
             <div class="header-content">
                 <h1>Tem lixo eletrônico em casa e não sabe como realizar o descarte?<h1>
-                <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
-                <button class="btn btn-success">Buscar</button>
-            </div> 
+                        <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
+                        <button class="btn btn-success">Buscar</button>
+            </div>
         </div>
-             
+
     </header>
 
     <main>
-         <!--about-->
-         <section id="about" class="about">
+        <!--about-->
+        <section id="about" class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center pb20">
@@ -101,53 +103,192 @@
         <!--end mapa-->
 
         <!--saiba+ -->
-        <section class="saiba-mais m-3">
+        <section id="saibaMais" class="saiba-mais m-3">
             <div class="col-md-12 text-center">
                 <h2>Saiba +<br><strong>Notícias e curiosidades</strong></h2>
             </div>
-            
-            <div class="row mb-2">
-                <div class="col-md-6">
-                    <div class="card flex-md-row mb-4 box-shadow h-md-200">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">
-                                <a class="text-dark" href="#">Featured post</a>
-                            </h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#">Continue reading</a>
+
+            <div class="container cta-100 ">
+                <div class="container">
+                    <div class="row blog">
+                        <div class="col-md-12">
+                            <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Maio 25</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--.row-->
+                                    </div>
+                                    <!--.item-->
+                                    <div class="carousel-item ">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item-box-blog">
+                                                    <div class="item-box-blog-image">
+                                                        <!--Date-->
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <!--Image-->
+                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                    </div>
+                                                    <div class="item-box-blog-body">
+                                                        <!--Heading-->
+                                                        <div class="item-box-blog-heading">
+                                                            <a href="#" tabindex="0">
+                                                                <h5>News Title</h5>
+                                                            </a>
+                                                        </div>
+                                                        <!--Text-->
+                                                        <div class="item-box-blog-text">
+                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                        </div>
+                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <!--Read More Button-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--.row-->
+                                    </div>
+                                    <!--.item-->
+                                </div>
+                                <!--.carousel-inner-->
+                            </div>
+                            <!--.Carousel-->
                         </div>
-                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <strong class="d-inline-block mb-2 text-success">Design</strong>
-                            <h3 class="mb-0">
-                                <a class="text-dark" href="#">Post title</a>
-                            </h3>
-                            <div class="mb-1 text-muted">Nov 11</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#">Continue reading</a>
-                        </div>
-                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-                    </div>
-                </div>
-            </div>
-        </div>
-         
-
-            <div class="col-6">
-
             </div>
         </section>
 
         <!--end saiba+ -->
 
         <!--cadastro-->
-        <section class="cadastro">
+        <section id="cadastro" class="cadastro">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -156,39 +297,48 @@
 
                         <form id="form-cadastro">
                             <div class="form-group">
-                            <div class="row">
-                                <div class="col-12">
-                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa">
-                                    </div>
-                                </div>  
-                            </div>                              
-
-                            <div class="form-group">
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                        <input class="form-control" name="email" type="email" placeholder="E-mail">
-                                    </div>                    
-                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                        <input class="form-control" type="tel" name="telefone" placeholder="Telefone">
-                                    </div>
-                                </div>
-                            </div>    
-
-                            <label class="text-left">Localização:</label>  
-                            <div class="form-group">
-                                <div class="row">                           
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <input class="form-control" name="latituide" type="text" placeholder="Latitude">
-                                    </div>                    
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <input class="form-control" name="longitude" type="text" placeholder="Longitude">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <input class="form-control" name="longitude" type="text" placeholder="Número">
+                                    <div class="col-12">
+                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa">
                                     </div>
                                 </div>
                             </div>
-                            
+
+                            <div class="form-row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <input class="form-control" name="email" type="email" placeholder="E-mail">
+                                </div>
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <input class="form-control" type="tel" name="telefone" placeholder="Telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <input class="form-control" name="site" type="text" placeholder="Site">
+                                </div>
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <select class="form-control" id="realizaColetaDomicilio">
+                                        <option value="0">Realiza coleta em domicílio?</option>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <label class="text-left">Localização:</label>
+                            <div class="form-row">
+                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <input class="form-control" name="latituide" type="text" placeholder="Latitude">
+                                </div>
+                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <input class="form-control" name="longitude" type="text" placeholder="Longitude">
+                                </div>
+                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <input class="form-control" name="longitude" type="text" placeholder="Número">
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa"></textarea>
                             </div>
@@ -201,10 +351,10 @@
                             <div>
                                 <button class="btn btn-success">Enviar</button>
                             </div>
-                           
+
                         </form>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -212,7 +362,7 @@
     </main>
 
     <footer>
-    <!-- Copyright -->
+        <!-- Copyright -->
         <div class="page-footer text-center py-3">© 2020 Copyright:
             <a href="#"> LixoEletrônicoAqui.com</a>
         </div>
@@ -221,6 +371,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
