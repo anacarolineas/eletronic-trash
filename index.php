@@ -24,7 +24,7 @@
                 <div class="navbar-nav navbar-right">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">Sobre nós</a>
-                    <a class="nav-item nav-link" href="#">Locais</a>
+                    <a class="nav-item nav-link" href="#">Buscar</a>
                     <a class="nav-item nav-link" href="#saibaMais">Saiba+</a>
                     <a class="nav-item nav-link" href="#cadastro">Cadastre-se</a>
                 </div>
@@ -35,7 +35,7 @@
             <video class="video-bg" src="video/video-home.mp4" autoplay="true" loop="true"></video>
         </div>
 
-        <div class="row text-center">
+        <div class="row showcase-top text-center">
             <div class="header-content">
                 <h1>Tem lixo eletrônico em casa e não sabe como realizar o descarte?<h1>
                         <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
@@ -51,40 +51,48 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center pb20">
-                        <h2>We Are Wunderkind<br><strong>Something You Love</strong></h2>
-                        <p class="lead">We create experiences that <span class="color">transform brands</span>, grow businesses<br>and make people’s lives better. Building brands and driving sales with powerful ideas.</p>
+                        <h2>Lixo Eletrônico Aqui!<br><strong>Sobre nós</strong></h2>
+                        <p class="lead">Projeto acadêmico desenvolvido pelo curso de graduação de Sistemas de Informação da faculdade Multivix<br>com o objetivo de realizar uma intervenção
+                            no meio digital com o tema sustentabilidade. Com base em pesquisas realizadas, notou-se a dificuldade da população em saber realizar o descarte correto de lixo eletrônico, a ideia foi desenvolver um site
+                            para que empresas possam se cadastrar e informar seus dados para contato e as pessoas pudessem realizar uma busca no site e identificar o local mais próximo de sua casa para o descarte desses tipos de materiais. </p>
                     </div>
 
-                    <div class="col-sm-6 feature-left">
-                        <i class="icon-telescope size-3x color"></i>
-                        <i class="icon-telescope back-icon"></i>
-                        <div class="feature-left-content">
-                            <h4><strong>We're Creative</strong><br>Crafting With Love</h4>
-                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                    <div class="col-sm-6">
+                        <div class="showcase-left">
+                            <h4><strong>Por que o lixo eletrônico é tão prejudical?</strong></h4>
+                            <p>Eletrônicos quando descartados em lixões, podem liberar substâncias tóxicas na água, solo e ar, como por exemplo, chumbo, arsênio, mercúrio, cobre, cádmio e zinco.
+                                Esses materiais podem causar problemas respiratórios e dados ao sistema nervoso, além de prejudicar o meio ambiente. </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 feature-left">
-                        <i class="icon-circle-compass size-3x color"></i>
-                        <i class="icon-circle-compass back-icon"></i>
-                        <div class="feature-left-content">
-                            <h4><strong>We're Cool Nerds</strong><br>Coding With Fun</h4>
-                            <p>Duis vel est nec sapien suscipit gravida. Integer vitae tortor dui. Donec libero quam, euismod sit amet enim ac, varius dictum.</p>
+                    <div class="col-sm-6">
+                        <div class="showcase-rigth">
+                            <h4><strong>Por que se gera tanto e-lixo no Brasil?</strong></h4>
+                            <p>O grande número de lixo eletrônico no Brasil é devido a grande demandas pelos aparelhos eletrônicos. O Brasil lidera o ranking de países da América Latina que mais produzem e.lixo.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 feature-left">
-                        <i class="icon-genius size-3x color"></i>
-                        <i class="icon-genius back-icon"></i>
-                        <div class="feature-left-content">
-                            <h4><strong>We're Passionate</strong><br>Available When You Need Us</h4>
-                            <p>Maecenas sit amet eros luctus dui volutpat sollicitudin id vitae est. Vivamus laoreet adipiscing metus vel fermentum. Sed velit.</p>
+                    <div class="col-sm-6">
+                        <div class="showcase-left">
+                            <h4><strong>Mas afinal, o que é lixo eletrônico?</strong></h4>
+                            <p>Todos os aparelhos que dependem do uso de corrente elétrica ou de campos eletromagnéticos são caracterizados eletrônicos. Existem quatro grupos de classificação:</p>
+                            <ul>
+                                <li><strong>Linha branca:</strong> refrigeradores e congeladores, fogões, lavadoras de roupa e louça, secadoras e condicionadores de ar; </li>
+                                <li><strong>Linha marrom:</strong> monitores e televisores de tubo, plasma, LCD e LED, aparelhos de DVD e VHS, equipamentos de áudio e filmadoras;</li>
+                                <li><strong>Linha azul:</strong> batedeiras, liquidificadores, ferros elétricos, furadeiras, secadores de cabelo, espremedores de frutas, aspiradores de pó e cafeteiras;</li>
+                                <li><strong>Linha verde:</strong> computadores desktop e laptops, acessórios de informática, tablets e telefones celulares.</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 feature-left">
-                        <i class="icon-layers size-3x color"></i>
-                        <i class="icon-layers back-icon"></i>
-                        <div class="feature-left-content">
-                            <h4><strong>We're Professional</strong><br>New York Based</h4>
-                            <p>Integer ornare, tellus eget lobortis cursus, metus enim ultricies eros, vitae porttitor elit sapien quis justo. Duis vitae.</p>
+                    <div class="col-sm-6">
+                        <div class="showcase-rigth">
+                            <h4><strong>Materias primas geradas com a reciclagem</strong></h4>
+                            <p>O processo de reciclagem pode transformar eletrônicos em matéria-prima ou subproduto com valor comercial.
+                                A suacata eletrônica nos fornece materiais que ganham vida nova e geram renda. Abaixo listaremos alguns produtos extraídos de materiais eletrônicos:
+                            </p>
+                            <ul>
+                                <li><strong>Plásticos:</strong> podem ser reciclados por processo mecânico, químico ou energético;</li>
+                                <li><strong>Estanho e cobre:</strong> podem ser obtidos a partir de placas de circuito eletrônico microcomputadores, pelo processo de lixiviação;</li>
+                                <li><strong>Alumínio:</strong> o processo de reciclagem inclui retirada de impurezas, picotagem e fundição. O material é derretido e transformado em alumínio líquido, base para lingotes ou chapas de alumínio.</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -98,7 +106,7 @@
             <div class="container">
 
             </div>
-            <iframe height="550" width="100%" src="https://maps.google.com/maps?q=Renaissance%20New%20York%20Hotel%2057%2C%20New%20York%2C%20USA&t=m&z=17&output=embed&iwloc=near" border="0" marginwidth="0" marginheight="0"></iframe>
+
         </section>
         <!--end mapa-->
 
@@ -125,22 +133,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Maio 25</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">NOTÍCIAS</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="https://cdn-istoedinheiro-ssl.akamaized.net/wp-content/uploads/sites/17/2020/02/lixo_eletronico-768x432.jpg"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Decreto obriga empresas a recolherem lixo eletrônico</h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>Atualmente, existem, segundo o governo, um total de 173 pontos de coleta de eletroeletrônicos no Brasil. O acordo, agora regulamentado em decreto, prevê que esse...</p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="https://www.istoedinheiro.com.br/decreto-obriga-empresas-a-recolherem-lixo-eletronico/" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Leia mais...</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -149,22 +155,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">NOTÍCIAS</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="http://www.engeplus.com.br/cache/noticia/0141/0141948/entenda-as-novas-regras-para-recolhimento-de-lixo-eletronico.jpg?t=20200216083434"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Entenda as novas regras para recolhimento de lixo eletrônico</h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>Assinado na última semana pelo presidente Jair Bolsonaro, o decreto 10.240 de 2020 estabelece as regras para implementação do sistema de logística reversa para produtos eletroeletrônicos...</p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="http://www.engeplus.com.br/noticia/geral/2020/entenda-as-novas-regras-para-recolhimento-de-lixo-eletronico" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Leia mais...</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -173,22 +177,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">VÍDEOS</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="https://www.saneamentobasico.com.br/wp-content/uploads/2020/03/residuos-solidos-1.jpg"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Lixo eletrônico: visitamos uma cooperativa de reciclagem</h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>Canaltech. A Coopermiti opera hoje com 30 cooperados em um galpão de 2 mil metros quadrados, onde processa toneladas de lixo eletrônico todos os meses.</p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="https://www.youtube.com/watch?v=-u5enIcOA5w" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Assistir</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -203,22 +205,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">NOTÍCIAS</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="https://diariodocomercio.com.br/wp-content/uploads/2020/01/lixo-eletronico-131-696x464.jpg"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Brasil é o país que mais produz lixo eletrônico na América Latina</h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>O Brasil é quem lidera a posição de produtor de lixo eletrônico na América Latina, ocupa o 7º lugar nesse ranking, ficando atrás de China, Estados Unidos, Japão, Índia...</p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="https://diariodocomercio.com.br/livre/brasil-e-o-pais-que-mais-produz-lixo-eletronico-na-america-latina/" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Leia mais...</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -227,22 +227,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">CURIOSIDADES</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="https://cdn4.ecycle.com.br/cache/images/2018-08/50-650-computador-velho.jpg"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Dez coisas para fazer com computador velho </h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>Computadores não devem ser jogados no lixo comum. Eles possuem diversas peças com resíduos químicos que causam problemas ao entrarem em contato direto...</p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="https://www.ecycle.com.br/component/content/article/48-eletronicos/122-reciclagem-computador.html" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Leia mais...</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -251,22 +249,20 @@
                                                 <div class="item-box-blog">
                                                     <div class="item-box-blog-image">
                                                         <!--Date-->
-                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">Augu 01</span> </div>
+                                                        <div class="item-box-blog-date bg-blue-ui"> <span class="mon">CURIOSIDADES</span> </div>
                                                         <!--Image-->
-                                                        <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                        <figure> <img alt="imagem" src="https://cdn4.ecycle.com.br/cache/images/guia_da_reciclagem/50-650-placa-750.jpg"> </figure>
                                                     </div>
                                                     <div class="item-box-blog-body">
                                                         <!--Heading-->
                                                         <div class="item-box-blog-heading">
-                                                            <a href="#" tabindex="0">
-                                                                <h5>News Title</h5>
-                                                            </a>
+                                                            <h5>Entenda os processos por trás da reciclagem de equip. eletrônicos </h5>
                                                         </div>
                                                         <!--Text-->
                                                         <div class="item-box-blog-text">
-                                                            <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                                                            <p>A Organização Internacional do Trabalho (OIT) estima que a geração mundial de lixo eletrônico, também conhecido como e-lixo, alcance a ordem de dezenas de milhões... </p>
                                                         </div>
-                                                        <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Leia mais...</a> </div>
+                                                        <div class="mt"> <a href="https://www.ecycle.com.br/component/content/article/44-guia-da-reciclagem/1823-entenda-os-processos-por-tras-da-reciclagem-de-equipamentos-eletronicos.html" tabindex="0" class="btn bg-blue-ui white read" target="_blank">Leia mais...</a> </div>
                                                         <!--Read More Button-->
                                                     </div>
                                                 </div>
@@ -289,9 +285,10 @@
 
         <!--cadastro-->
         <section id="cadastro" class="cadastro">
+            <img class="img-cadastro" src="imagens/background-cadastro.jpg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center mt-4">
                         <h2>Sua empresa recolhe lixo eletrônico?<br><strong>Cadastre-se em nosso site!</strong></h2>
                         <p class="lead">Preencha o formulário abaixo para cadastro.</p>
 
@@ -326,7 +323,11 @@
                                 </div>
                             </div>
 
-                            <label class="text-left">Localização:</label>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <div class="row text-left m-lg-2">
+                                    <label>Localização:</label>
+                                </div>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <input class="form-control" name="latituide" type="text" placeholder="Latitude">
@@ -343,8 +344,10 @@
                                 <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa"></textarea>
                             </div>
 
-                            <div class="form-group">
-                                <label for="uploadImgLogo">Logo da empresa.</label>
+                            <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <div class="row text-left m-lg-2">
+                                    <label>Logo da empresa:</label>
+                                </div>
                                 <input type="file" class="form-control-file" id="uploadImgLogo">
                             </div>
 
@@ -370,8 +373,9 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
