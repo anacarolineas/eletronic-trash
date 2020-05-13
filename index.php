@@ -101,14 +101,46 @@
         </section>
         <!--end about-->
 
-        <!--mapa-->
-        <section class="map">
+       <!--busca-->
+       <section id = "buscar" class="busca m-3">
             <div class="container">
+                <div class= "row">
+                <div class="col-md-12 text-center mt-4">
+                        <h2>Buscar empresas parceiras<br><strong>Busque as empresas mais proximas!</strong></h2>
+                    <div class="form-row my-5">
+                                <div class="form-group col-sm-12 col-md-5 col-lg-4 col-xl-4">
+                                <select class="form-control" id="estado">
+                                       <!-- php
+                                         require_once('conexao.php');
+ 
+                                         print ("<select id='estado' name='estado'>");
+                                         $query = "SELECT sigla, descricao FROM estados ORDER BY descricao";
+                                         $result = mysql_query($query);
+                                         while ($rows = mysql_fetch_array($result)){
+                                           print("<option value='$rows[sigla]'");
+                                          print(">$rows[descricao]");
+                                         }
+                                         print ("</select>");
+                                       -->
 
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-12 col-md-5 col-lg-4 col-xl-4">
+                                    <select class="form-control" id="cidade">
+                                        <option value="0">Cidade</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-12 col-md-2 col-lg-4 col-xl-4">
+                                <button class="btn btn-success">Buscar</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>  
+                </div>
             </div>
-
         </section>
-        <!--end mapa-->
+        <!--end busca-->
 
         <!--saiba+ -->
         <section id="saibaMais" class="saiba-mais m-3">
