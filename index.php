@@ -101,43 +101,49 @@
         </section>
         <!--end about-->
 
-       <!--busca-->
-       <section id = "buscar" class="busca m-3">
+        <!--busca-->
+        <section id="buscar" class="busca">
             <div class="container">
-                <div class= "row">
-                <div class="col-md-12 text-center mt-4">
-                        <h2>Buscar empresas parceiras<br><strong>Busque as empresas mais proximas!</strong></h2>
-                    <div class="form-row my-5">
-                                <div class="form-group col-sm-12 col-md-5 col-lg-4 col-xl-4">
-                                <select class="form-control" id="estado">
-                                       <!-- php
-                                         require_once('conexao.php');
- 
-                                         print ("<select id='estado' name='estado'>");
-                                         $query = "SELECT sigla, descricao FROM estados ORDER BY descricao";
-                                         $result = mysql_query($query);
-                                         while ($rows = mysql_fetch_array($result)){
-                                           print("<option value='$rows[sigla]'");
-                                          print(">$rows[descricao]");
-                                         }
-                                         print ("</select>");
-                                       -->
-
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-12 col-md-5 col-lg-4 col-xl-4">
-                                    <select class="form-control" id="cidade">
-                                        <option value="0">Cidade</option>
-
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-12 col-md-2 col-lg-4 col-xl-4">
-                                <button class="btn btn-success">Buscar</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>  
+                <div class="col-12 text-center mt-4">
+                    <h2><strong>Busque as empresas mais próximas de você!</strong></h2>
                 </div>
+                <div class="form-row mt-3">
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <select class="form-control" id="cod_estados" name="cod_estados">
+                            <option value="0">Escolha um Estado</option>
+                            <?php
+                                include "conexao.php";
+
+                                $busca = $link->query("select * from te_estados");
+                            
+                                if($busca || $busca->num_rows > 0 ) {
+                            
+                                    while($linha = $busca->fetch_object()) {
+                                        ?>
+                                            <option value="<?=$linha->id_estado ?>">
+                                                <?= $linha->nome ?>                                                
+                                            </option>
+                                        <?php
+                            
+                                    }
+                            
+                                } else {
+                            
+                                    echo "Erro";                           
+                                }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <select class="form-control" name="cod_cidades" id="cod_cidades">
+                            <option value="">Esconha uma cidade</option>                     
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <button class="btn btn-success">Buscar</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <!--end busca-->
