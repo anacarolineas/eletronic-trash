@@ -109,34 +109,31 @@
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <select class="form-control" id="cod_estados" name="cod_estados">
+                        <select class="form-control" id="estados" name="estados">
                             <option value="0">Escolha um Estado</option>
                             <?php
-                                include "conexao.php";
+                            include "conexao.php";
+                            $busca = $link->query("select * from te_estados");
+                            if ($busca || $busca->num_rows > 0) {
 
-                                $busca = $link->query("select * from te_estados");
-                            
-                                if($busca || $busca->num_rows > 0 ) {
-                            
-                                    while($linha = $busca->fetch_object()) {
-                                        ?>
-                                            <option value="<?=$linha->id_estado ?>">
-                                                <?= $linha->nome ?>                                                
-                                            </option>
-                                        <?php
-                            
-                                    }
-                            
-                                } else {
-                            
-                                    echo "Erro";                           
+                                while ($linha = $busca->fetch_object()) {
+                            ?>
+                                    <option value="<?= $linha->id_estados ?>">
+                                        <?= $linha->nome ?>
+                                    </option>
+                            <?php
+
                                 }
+                            } else {
+
+                                echo "Erro";
+                            }
                             ?>
                         </select>
                     </div>
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <select class="form-control" name="cod_cidades" id="cod_cidades">
-                            <option value="">Esconha uma cidade</option>                     
+                        <select class="form-control" name="cidades" id="cidades">
+                            <option value="">Esconha uma cidade</option>
                         </select>
                     </div>
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
