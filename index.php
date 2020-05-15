@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/carousel-noticias.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <title>Document</title>
 </head>
 
@@ -110,7 +111,7 @@
                 <div class="form-row mt-3">
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
                         <select class="form-control" id="estados" name="estados">
-                            <option value="0">Escolha um Estado</option>
+                            <option value="0">Selecione um Estado</option>
                             <?php
                             include "conexao.php";
                             $busca = $link->query("select * from te_estados");
@@ -132,8 +133,8 @@
                         </select>
                     </div>
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <select class="form-control" name="cidades" id="cidades">
-                            <option value="">Esconha uma cidade</option>
+                        <select class="form-control" id="cidades" style="display:none">
+                            <option value="0">Selecione uma cidade</option>
                         </select>
                     </div>
                     <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -407,10 +408,41 @@
         <!-- Copyright -->
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $("#estados").on("change", function() {
+
+            $.ajax({
+                url: 'cidades.php',
+                type: 'POST',
+                data: {
+                    id: $("#estados").val()
+                },
+                beforeSend: function() {
+                    $("#cidades").css({
+                        'display': 'block'
+                    });
+                    $("#cidades").html("Carregando...");
+                },
+                success: function(data) {
+                    $("#cidades").css({
+                        'display': 'block'
+                    });
+                    $("#cidades").html(data);
+                },
+                error: function(data) {
+                    $("#cidades").css({
+                        'display': 'block'
+                    });
+                    $("#cidades").html("Houve um erro ao carregar");
+                }
+            });
+        });
+    </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
