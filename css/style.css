@@ -32,8 +32,8 @@ body {
   }
 
   .navbar.scrolled {
-    background-color: #292727 !important;
-    transition: background-color 200ms linear;
+    background-color: #1c1c1b !important;
+    transition: background-color 2000ms linear;
   }
 
   .navbar-right {

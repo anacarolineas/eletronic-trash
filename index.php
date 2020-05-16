@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/carousel-noticias.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script type="text/javascript" src="jquery.js"></script>
-    <title>Document</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>Lixo Eletrônico - Deposite aqui!</title>
 </head>
 
 <body>
@@ -109,7 +109,7 @@
                     <h2><strong>Busque as empresas mais próximas de você!</strong></h2>
                 </div>
                 <div class="form-row mt-3">
-                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="form-group col-sm-12 col-md-5 col-lg-5 col-xl-5">
                         <select class="form-control" id="estados" name="estados">
                             <option value="0">Selecione um Estado</option>
                             <?php
@@ -127,22 +127,20 @@
                                 }
                             } else {
 
-                                echo "Erro";
+                                echo "Ocorreu um erro ao buscar os Estados.";
                             }
                             ?>
                         </select>
                     </div>
-                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <select class="form-control" id="cidades" style="display:none">
+                    <div class="form-group col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <select class="form-control" id="cidades" >
                             <option value="0">Selecione uma cidade</option>
                         </select>
                     </div>
-                    <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <button class="btn btn-success">Buscar</button>
+                    <div class="form-group col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                        <button style="width: 100%" class="btn btn-success">Buscar</button>
                     </div>
                 </div>
-            </div>
-            </div>
         </section>
         <!--end busca-->
 
@@ -360,7 +358,7 @@
                             </div>
 
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                <div class="row text-left m-lg-2">
+                                <div class="row text-left ">
                                     <label>Localização:</label>
                                 </div>
                             </div>
@@ -381,10 +379,11 @@
                             </div>
 
                             <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                <div class="row text-left m-lg-2">
+                                <div class="row text-left">
                                     <label>Logo da empresa:</label>
+                                    <input type="file" class="form-control-file" id="uploadImgLogo">
                                 </div>
-                                <input type="file" class="form-control-file" id="uploadImgLogo">
+                                
                             </div>
 
                             <div>
