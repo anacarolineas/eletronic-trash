@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/carousel-noticias.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <title>Lixo Eletrônico - Deposite aqui!</title>
 </head>
 
@@ -326,11 +327,15 @@
                         <h2>Sua empresa recolhe lixo eletrônico?<br><strong>Cadastre-se em nosso site!</strong></h2>
                         <p class="lead">Preencha o formulário abaixo para cadastro.</p>
 
+                        <div class="d-flex flex-row-reverse">
+                            <span>* Campos obrigatórios:</span>
+                        </div>
+
                         <form id="form-cadastro">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa">
+                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa *">
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +345,7 @@
                                     <input class="form-control" name="email" type="email" placeholder="E-mail">
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <input class="form-control" type="tel" name="telefone" placeholder="Telefone">
+                                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
                                 </div>
                             </div>
 
@@ -350,7 +355,7 @@
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <select class="form-control" id="realizaColetaDomicilio">
-                                        <option value="0">Realiza coleta em domicílio?</option>
+                                        <option value="0">Realiza coleta em domicílio? *</option>
                                         <option>Sim</option>
                                         <option>Não</option>
                                     </select>
@@ -359,32 +364,57 @@
 
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                 <div class="row text-left ">
-                                    <label>Localização:</label>
+                                    <label>Localização: </label><img src="imagens/signs.png" title="A localização precisa facilitará ao usuário a encontrar sua empresa, se possível, preencha todos os campos.">
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input class="form-control" name="latituide" type="text" placeholder="Latitude">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <select class="form-control" id="estadoCad" name="estadoCad">
+                                        <option value="0">Selecione um Estado *</option>
+                                        <?php
+                                        include "conexao.php";
+                                        $busca = $link->query("select * from te_estados");
+                                        if ($busca || $busca->num_rows > 0) {
+
+                                            while ($linha = $busca->fetch_object()) {
+                                        ?>
+                                                <option value="<?= $linha->id_estados ?>">
+                                                    <?= $linha->nome ?>
+                                                </option>
+                                        <?php
+
+                                            }
+                                        } else {
+
+                                            echo "Ocorreu um erro ao buscar os Estados.";
+                                        }
+                                        ?>
+                                    </select>
                                 </div>
-                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input class="form-control" name="longitude" type="text" placeholder="Longitude">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <select class="form-control" id="cidadeCad">
+                                        <option value="0">Selecione uma cidade *</option>
+                                    </select>
                                 </div>
-                                <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input class="form-control" name="longitude" type="text" placeholder="Número">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <input class="form-control" name="latitude" id="latitude" type="text" placeholder="Latitude">
+                                </div>
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <input class="form-control" name="longitude" id="longitude" type="text" placeholder="Longitude">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa"></textarea>
+                                <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa *"></textarea>
                             </div>
 
-                            <div class="form-group col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                <div class="row text-left">
-                                    <label>Logo da empresa:</label>
-                                    <input type="file" class="form-control-file" id="uploadImgLogo">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                        <input class="form-control" type="text" placeholder="Link da logomarca de sua empresa">
                                 </div>
-
-                            </div>
+                            </div>                      
 
                             <div>
                                 <button class="btn btn-success">Enviar</button>
@@ -417,9 +447,6 @@
                     id: $("#estados").val()
                 },
                 beforeSend: function() {
-                    $("#cidades").css({
-                        'display': 'block'
-                    });
                     $("#cidades").html("Carregando...");
                 },
                 success: function(data) {
@@ -436,12 +463,37 @@
                 }
             });
         });
+
+        $("#estadoCad").on("change", function() {
+
+            $.ajax({
+                url: 'cidades.php',
+                type: 'POST',
+                data: {
+                    id: $("#estadoCad").val()
+                },
+                beforeSend: function() {
+                    $("#cidadeCad").html("Carregando...");
+                },
+                success: function(data) {
+                    $("#cidadeCad").css({
+                        'display': 'block'
+                    });
+                    $("#cidadeCad").html(data);
+                },
+                error: function(data) {
+                    $("#cidadeCad").css({
+                        'display': 'block'
+                    });
+                    $("#cidadeCad").html("Houve um erro ao carregar");
+                }
+            });
+        });
     </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -27,4 +27,8 @@ $(function () {
     });
 });
 
+$("#telefone").mask("(00) 00000-0000");
+$("#latitude").mask("-00.0000000");
+$("#longitude").mask("-00.0000000");
+
 
