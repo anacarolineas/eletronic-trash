@@ -331,7 +331,7 @@
                             <span>* Campos obrigatórios:</span>
                         </div>
 
-                        <form id="form-cadastro">
+                        <form id="form-cadastro" action="cadastro.php" method="post">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-12">
