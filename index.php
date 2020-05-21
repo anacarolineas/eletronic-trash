@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="imagens/icon-trash.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -354,10 +355,10 @@
                                     <input class="form-control" name="site" type="text" placeholder="Site">
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <select class="form-control" id="realizaColetaDomicilio">
-                                        <option value="0">Realiza coleta em domicílio? *</option>
-                                        <option>Sim</option>
-                                        <option>Não</option>
+                                    <select class="form-control" id="coleta" name="coleta">
+                                        <option value="">Realiza coleta em domicílio? *</option>
+                                        <option value="1">Sim</option>
+                                        <option value="0">Não</option>
                                     </select>
                                 </div>
                             </div>
@@ -392,7 +393,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <select class="form-control" id="cidadeCad">
+                                    <select class="form-control" id="cidadeCad" name="cidadeCad">
                                         <option value="0">Selecione uma cidade *</option>
                                     </select>
                                 </div>
@@ -407,12 +408,12 @@
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" rows="3" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa *"></textarea>
+                                <textarea class="form-control" rows="3" id="descricao" name="descricao" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa *"></textarea>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                        <input class="form-control" type="text" placeholder="Link da logomarca de sua empresa">
+                                        <input class="form-control" id="logo" name="logo" type="text" placeholder="Link da logomarca de sua empresa">
                                 </div>
                             </div>                      
 

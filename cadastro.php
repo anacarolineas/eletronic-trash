@@ -1,37 +1,32 @@
 <?php
-$dsn = "mysql:host=us-cdbr-east-06.cleardb.net;dbname=heroku_20ed495dcb55965";
-$username = "ba9bd6840dc099";
-$password = "15789e4f";
 
-$pdo = new PDO($dsn, $username, $password);
-$pdo->exec("set names utf8");
+include "conexao.php";
 
 // Check connection
-if (!$pdo) {
+if (!$link) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-echo "Connected successfully";
+$nome = $_POST['name'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$site = $_POST['site'];
+$coleta = $_POST['coleta'];
+$estado = $_POST['estadoCad'];
+$cidade = $_POST['cidadeCad'];
+$latitude = $_POST['latitude'];
+$longitude = $_POST['longitude'];
+$descricao = $_POST['descricao'];
+$logo = $_POST['logo'];
 
-$nome = $_POST['nome'];
-$email = $_POST['nome'];
-$telefone = $_POST['nome'];
-$site = $_POST['nome'];
-$coleta = $_POST['nome'];
-$estado = $_POST['nome'];
-$cidade = $_POST['nome'];
-$latitude = $_POST['nome'];
-$longitude = $_POST['nome'];
-$descricao = $_POST['nome'];
-$logo = $_POST['nome'];
+$sql = "INSERT INTO te_empresas (nome, email, telefone, site, realiza_coleta, estado, cidade, latitude, longitude, descricao, 
+link_logo, disponivel) VALUES ('$nome', '$email', '$telefone', '$site', '$coleta', '$estado', '$cidade', '$latitude', '$longitude', '$descricao', '$logo', '0')";
 
-$sql = "INSERT INTO te_empresas (name, lastname, email) VALUES ('Thom', 'Vial', 'thom.v@some.com')";
-
-if (mysqli_query($pdo, $sql)) {
-    echo "<script>alert('Cadastro enviado com sucesso! </br> Em breve sua empresa estará disponível em nosso site.');</script>";
+if (mysqli_query($link, $sql)) {
+    echo "<script>alert('Cadastro enviado com sucesso! Em breve sua empresa estará disponível em nosso site.');</script>";
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($pdo);
+    echo "Error: " . $sql . "<br>" . mysqli_error($link);
 }
-mysqli_close($pdo);
+mysqli_close($link);
 
-?>
+header("refresh:0; url=index.php");
