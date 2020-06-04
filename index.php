@@ -27,7 +27,7 @@
                 <div class="navbar-nav navbar-right">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">Sobre nós</a>
-                    <a class="nav-item nav-link" href="#">Buscar</a>
+                    <a class="nav-item nav-link" href="#buscar">Buscar</a>
                     <a class="nav-item nav-link" href="#saibaMais">Saiba+</a>
                     <a class="nav-item nav-link" href="#cadastro">Cadastre-se</a>
                 </div>
@@ -143,11 +143,17 @@
                         <button style="width: 100%" class="btn btn-success">Buscar</button>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                            <img src="imagens/lixo-2.png">
+                    </div>
+                </div>
+            </div>
         </section>
         <!--end busca-->
 
         <!--saiba+ -->
-        <section id="saibaMais" class="saiba-mais m-3">
+        <section id="saibaMais" class="saiba-mais">
             <div class="col-md-12 text-center">
                 <h2>Saiba +<br><strong>Notícias e curiosidades</strong></h2>
             </div>
@@ -321,7 +327,6 @@
 
         <!--cadastro-->
         <section id="cadastro" class="cadastro">
-            <img class="img-cadastro" src="imagens/background-cadastro.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center mt-4">
@@ -413,9 +418,9 @@
 
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                        <input class="form-control" id="logo" name="logo" type="text" placeholder="Link da logomarca de sua empresa">
+                                    <input class="form-control" id="logo" name="logo" type="text" placeholder="Link da logomarca de sua empresa">
                                 </div>
-                            </div>                      
+                            </div>
 
                             <div>
                                 <button class="btn btn-success">Enviar</button>

@@ -23,7 +23,7 @@ sr.reveal('.showcase-top', {
 
 $(function () {
     $(window).scroll(function () {
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 800);
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 690);
     });
 });
 
