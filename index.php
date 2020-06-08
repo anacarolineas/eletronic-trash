@@ -140,13 +140,10 @@
                         </select>
                     </div>
                     <div class="form-group col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                        <button style="width: 100%" class="btn btn-success">Buscar</button>
+                        <button style="width: 100%" class="btn btn-success" id="btnBuscar">Buscar</button>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                            <img src="imagens/lixo-2.png">
-                    </div>
+                </div>              
+                <div id="dados" class="row">
                 </div>
             </div>
         </section>
@@ -500,7 +497,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>

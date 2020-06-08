@@ -31,4 +31,23 @@ $("#telefone").mask("(00) 00000-0000");
 $("#latitude").mask("-00.0000000");
 $("#longitude").mask("-00.0000000");
 
+//Formulário
+function buscar() {
+    $.ajax({
+        type: 'POST',
+        dataType: 'html',
+        url:'busca.php',
+        beforeSend: function () {
+            $("#dados").html("Carregando...");
+        },
+        success: function (msg) {
+            $("#dados").html(msg);
+        }
+    });
+}
+
+$('#btnBuscar').click(function () {
+    buscar();  
+}); 
+
 

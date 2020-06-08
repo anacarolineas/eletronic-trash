@@ -13,5 +13,7 @@ $sql->execute();
 $fetchBusca = $sql->fetchAll();
 
 foreach($fetchBusca as $cidades) {
-  echo '<option>'.$cidades['nome'].'</option>';
+  echo '<option value='.$cidades['id_cidade'].'>'.$cidades['nome'].'</option>';
+
+  
 }
