@@ -27,6 +27,22 @@ $(function () {
     });
 });
 
+var $doc = $('html, body');
+$('.nav-link').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+var $doc = $('html, body');
+$('.btn-buscar').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
 $("#telefone").mask("(00) 00000-0000");
 $("#latitude").mask("-00.0000000");
 $("#longitude").mask("-00.0000000");

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-lg navigation border-bottom">
             <a class="navbar-brand" href="#"><img height="50px" src="imagens/icon-trash.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-right">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">Sobre nós</a>
                     <a class="nav-item nav-link" href="#buscar">Buscar</a>
                     <a class="nav-item nav-link" href="#saibaMais">Saiba+</a>
@@ -43,7 +43,7 @@
             <div class="header-content">
                 <h1>Tem lixo eletrônico em casa e não sabe como realizar o descarte?<h1>
                         <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
-                        <a href="#buscar" class="btn btn-success">Buscar</a>
+                        <a href="#buscar" class="btn btn-success btn-buscar">Buscar</a>
             </div>
         </div>
 
