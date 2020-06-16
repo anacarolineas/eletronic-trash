@@ -32,14 +32,15 @@ $("#latitude").mask("-00.0000000");
 $("#longitude").mask("-00.0000000");
 
 //Formulário
-function buscar() {
+function buscar(estado, cidade) {
     $.ajax({
         type: 'POST',
         dataType: 'html',
-        url:'busca.php',
+        url: 'busca.php',
         beforeSend: function () {
-            $("#dados").html("Carregando...");
+            $("#dados").prepend('<img class="loading img-responsive center-block" src="imagens/loading.gif"/>');
         },
+        data: { estado: estado, cidade: cidade },
         success: function (msg) {
             $("#dados").html(msg);
         }
@@ -47,7 +48,18 @@ function buscar() {
 }
 
 $('#btnBuscar').click(function () {
-    buscar();  
-}); 
+    let estado = $("#estados").val();
+    let cidade = $("#cidades").val();
+    buscar(estado, cidade);
+});
+
+
+
+
+
+
+
+
+
 
 

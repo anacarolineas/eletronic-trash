@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT0QRmEq57etc7rLJUtlu1XpdH06j4Pr8&callback=initMap" async defer></script>
     <title>Lixo Eletrônico - Deposite aqui!</title>
 </head>
 
@@ -42,7 +43,7 @@
             <div class="header-content">
                 <h1>Tem lixo eletrônico em casa e não sabe como realizar o descarte?<h1>
                         <h4>Conheça algumas empresas que realizam essa coleta perto de você.</h4>
-                        <button class="btn btn-success">Buscar</button>
+                        <a href="#buscar" class="btn btn-success">Buscar</a>
             </div>
         </div>
 
@@ -54,61 +55,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center pb20">
-                        <h2>Lixo Eletrônico Aqui!<br><strong>Sobre nós</strong></h2>
-                        <p class="lead">Projeto acadêmico desenvolvido pelo curso de graduação de Sistemas de Informação da faculdade Multivix<br>com o objetivo de realizar uma intervenção
+                        <h2 class="showcase-left">Lixo Eletrônico Aqui!<br><strong>Sobre nós</strong></h2>
+                        <p class="lead showcase-rigth">Projeto acadêmico desenvolvido pelo curso de graduação de Sistemas de Informação da faculdade Multivix<br>com o objetivo de realizar uma intervenção
                             no meio digital com o tema sustentabilidade. Com base em pesquisas realizadas, notou-se a dificuldade da população em saber realizar o descarte correto de lixo eletrônico, a ideia foi desenvolver um site
                             para que empresas possam se cadastrar e informar seus dados para contato e as pessoas pudessem realizar uma busca no site e identificar o local mais próximo de sua casa para o descarte desses tipos de materiais. </p>
                     </div>
-
-                    <div class="col-sm-6">
-                        <div class="showcase-left">
-                            <h4><strong>Por que o lixo eletrônico é tão prejudical?</strong></h4>
-                            <p>Eletrônicos quando descartados em lixões, podem liberar substâncias tóxicas na água, solo e ar, como por exemplo, chumbo, arsênio, mercúrio, cobre, cádmio e zinco.
-                                Esses materiais podem causar problemas respiratórios e dados ao sistema nervoso, além de prejudicar o meio ambiente. </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="showcase-rigth">
-                            <h4><strong>Por que se gera tanto e-lixo no Brasil?</strong></h4>
-                            <p>O grande número de lixo eletrônico no Brasil é devido a grande demandas pelos aparelhos eletrônicos. O Brasil lidera o ranking de países da América Latina que mais produzem e.lixo.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="showcase-left">
-                            <h4><strong>Mas afinal, o que é lixo eletrônico?</strong></h4>
-                            <p>Todos os aparelhos que dependem do uso de corrente elétrica ou de campos eletromagnéticos são caracterizados eletrônicos. Existem quatro grupos de classificação:</p>
-                            <ul>
-                                <li><strong>Linha branca:</strong> refrigeradores e congeladores, fogões, lavadoras de roupa e louça, secadoras e condicionadores de ar; </li>
-                                <li><strong>Linha marrom:</strong> monitores e televisores de tubo, plasma, LCD e LED, aparelhos de DVD e VHS, equipamentos de áudio e filmadoras;</li>
-                                <li><strong>Linha azul:</strong> batedeiras, liquidificadores, ferros elétricos, furadeiras, secadores de cabelo, espremedores de frutas, aspiradores de pó e cafeteiras;</li>
-                                <li><strong>Linha verde:</strong> computadores desktop e laptops, acessórios de informática, tablets e telefones celulares.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="showcase-rigth">
-                            <h4><strong>Materias primas geradas com a reciclagem</strong></h4>
-                            <p>O processo de reciclagem pode transformar eletrônicos em matéria-prima ou subproduto com valor comercial.
-                                A suacata eletrônica nos fornece materiais que ganham vida nova e geram renda. Abaixo listaremos alguns produtos extraídos de materiais eletrônicos:
-                            </p>
-                            <ul>
-                                <li><strong>Plásticos:</strong> podem ser reciclados por processo mecânico, químico ou energético;</li>
-                                <li><strong>Estanho e cobre:</strong> podem ser obtidos a partir de placas de circuito eletrônico microcomputadores, pelo processo de lixiviação;</li>
-                                <li><strong>Alumínio:</strong> o processo de reciclagem inclui retirada de impurezas, picotagem e fundição. O material é derretido e transformado em alumínio líquido, base para lingotes ou chapas de alumínio.</li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
         <!--end about-->
 
         <!--busca-->
-        <section id="buscar" class="busca">
+        <section id="buscar" class="busca showcase-top">
             <div class="container">
                 <div class="col-12 text-center mt-4">
-                    <h2><strong>Busque as empresas mais próximas de você!</strong></h2>
+                    <h2><strong>Busque as empresas mais próximas a você!</strong></h2>
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-sm-12 col-md-5 col-lg-5 col-xl-5">
@@ -142,7 +103,7 @@
                     <div class="form-group col-sm-12 col-md-2 col-lg-2 col-xl-2">
                         <button style="width: 100%" class="btn btn-success" id="btnBuscar">Buscar</button>
                     </div>
-                </div>              
+                </div>
                 <div id="dados" class="row">
                 </div>
             </div>
@@ -154,6 +115,52 @@
             <div class="col-md-12 text-center">
                 <h2>Saiba +<br><strong>Notícias e curiosidades</strong></h2>
             </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="showcase-left">
+                            <h4><strong>Por que o lixo eletrônico é tão prejudical?</strong></h4>
+                            <p>Eletrônicos quando descartados em lixões, podem liberar substâncias tóxicas na água, solo e ar, como por exemplo, chumbo, arsênio, mercúrio, cobre, cádmio e zinco.
+                                Esses materiais podem causar problemas respiratórios e danos ao sistema nervoso, além de prejudicar o meio ambiente. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="showcase-rigth">
+                            <h4><strong>Por que se gera tanto e-lixo no Brasil?</strong></h4>
+                            <p>O grande número de lixo eletrônico no Brasil é devido a grande demandas pelos aparelhos eletrônicos. O Brasil lidera o ranking de países da América Latina que mais produzem e.lixo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="showcase-left">
+                            <h4><strong>Mas afinal, o que é lixo eletrônico?</strong></h4>
+                            <p>Todos os aparelhos que dependem do uso de corrente elétrica ou de campos eletromagnéticos são caracterizados eletrônicos. Existem quatro grupos de classificação:</p>
+                            <ul>
+                                <li><strong>Linha branca:</strong> refrigeradores e congeladores, fogões, lavadoras de roupa e louça, secadoras e condicionadores de ar; </li>
+                                <li><strong>Linha marrom:</strong> monitores e televisores de tubo, plasma, LCD e LED, aparelhos de DVD e VHS, equipamentos de áudio e filmadoras;</li>
+                                <li><strong>Linha azul:</strong> batedeiras, liquidificadores, ferros elétricos, furadeiras, secadores de cabelo, espremedores de frutas, aspiradores de pó e cafeteiras;</li>
+                                <li><strong>Linha verde:</strong> computadores desktop e laptops, acessórios de informática, tablets e telefones celulares.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="showcase-rigth">
+                            <h4><strong>Materias primas geradas com a reciclagem</strong></h4>
+                            <p>O processo de reciclagem pode transformar eletrônicos em matéria-prima ou subproduto com valor comercial.
+                                A suacata eletrônica nos fornece materiais que ganham vida nova e geram renda. Abaixo listaremos alguns produtos extraídos de materiais eletrônicos:
+                            </p>
+                            <ul>
+                                <li><strong>Plásticos:</strong> podem ser reciclados por processo mecânico, químico ou energético;</li>
+                                <li><strong>Estanho e cobre:</strong> podem ser obtidos a partir de placas de circuito eletrônico microcomputadores, pelo processo de lixiviação;</li>
+                                <li><strong>Alumínio:</strong> o processo de reciclagem inclui retirada de impurezas, picotagem e fundição. O material é derretido e transformado em alumínio líquido, base para lingotes ou chapas de alumínio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="container cta-100 ">
                 <div class="container">
@@ -327,18 +334,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center mt-4">
-                        <h2>Sua empresa recolhe lixo eletrônico?<br><strong>Cadastre-se em nosso site!</strong></h2>
-                        <p class="lead">Preencha o formulário abaixo para cadastro.</p>
+                        <h2 class="showcase-left">Sua empresa recolhe lixo eletrônico?<br><strong>Cadastre-se em nosso site!</strong></h2>
+                        <p class="lead showcase-rigth">Preencha o formulário abaixo para cadastro.</p>
 
                         <div class="d-flex flex-row-reverse">
                             <span>* Campos obrigatórios:</span>
                         </div>
 
-                        <form id="form-cadastro" action="cadastro.php" method="post">
+                        <form id="form-cadastro" name="form" action="cadastro.php" method="post">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa *">
+                                        <input class="form-control" name="name" type="text" placeholder="Nome da empresa *" required>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +355,7 @@
                                     <input class="form-control" name="email" type="email" placeholder="E-mail">
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+                                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="Telefone *" required>
                                 </div>
                             </div>
 
@@ -357,7 +364,7 @@
                                     <input class="form-control" name="site" type="text" placeholder="Site">
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <select class="form-control" id="coleta" name="coleta">
+                                    <select class="form-control" id="coleta" name="coleta" required>
                                         <option value="">Realiza coleta em domicílio? *</option>
                                         <option value="1">Sim</option>
                                         <option value="0">Não</option>
@@ -367,12 +374,12 @@
 
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                 <div class="row text-left ">
-                                    <label>Localização: </label><img src="imagens/signs.png" title="A localização precisa facilitará ao usuário a encontrar sua empresa, se possível, preencha todos os campos.">
+                                    <label>Localização: </label><img src="imagens/signs.png" class="img-localizacao" title="A localização precisa facilitará ao usuário a encontrar sua empresa, se possível, preencha todos os campos.">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <select class="form-control" id="estadoCad" name="estadoCad">
+                                    <select class="form-control" id="estadoCad" name="estadoCad" required>
                                         <option value="0">Selecione um Estado *</option>
                                         <?php
                                         include "conexao.php";
@@ -395,7 +402,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <select class="form-control" id="cidadeCad" name="cidadeCad">
+                                    <select class="form-control" id="cidadeCad" name="cidadeCad" required>
                                         <option value="0">Selecione uma cidade *</option>
                                     </select>
                                 </div>
@@ -410,7 +417,7 @@
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" rows="3" id="descricao" name="descricao" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa *"></textarea>
+                                <textarea class="form-control" rows="3" id="descricao" name="descricao" style="resize: none" placeholder="Faça uma breve descrição sobre sua empresa *" required></textarea>
                             </div>
 
                             <div class="form-row">
@@ -422,7 +429,6 @@
                             <div>
                                 <button class="btn btn-success">Enviar</button>
                             </div>
-
                         </form>
                     </div>
 

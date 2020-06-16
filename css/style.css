@@ -11,6 +11,7 @@ body {
     line-height:  1.5;
     color: #000000;
     overflow-x: hidden;
+    background-color: #e1fedf;
 }
 
 .v-header {
@@ -82,7 +83,7 @@ body {
 
   .about {
       position: relative;
-      padding: 80px 0;
+      padding-top: 80px;
       background: rgb(225,254,223);
       background: linear-gradient(0deg, rgba(225,254,223,1) 0%, rgba(214,255,211,1) 80%, rgba(0,0,0,1) 100%); 
   }
@@ -98,7 +99,7 @@ body {
 
   .cadastro {
     position: relative;
-    padding: 80px 0;
+    padding-bottom: 80px;
     background: rgb(225,254,223);
     background: linear-gradient(180deg, rgba(225,254,223,1) 0%, rgba(214,255,211,1) 30%, rgba(0,0,0,1) 100%); 
   }
@@ -115,6 +116,21 @@ body {
 
   .card a:hover{
     color: #28a745;
+  }
+
+  .modal-header, .btn-fechar {
+    background-color: #e1fedf;
+  }
+
+  .loading {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .map {
+    width: 100%;
+    height: 200px;
   }
   /* Fim busca*/
 
@@ -241,7 +257,7 @@ padding: 15px;
 }
 
 .item-box-blog-heading h5 {
-    color: #41cb52;
+    color: #28a745;
     font-weight: bold;
 }
 
@@ -279,6 +295,11 @@ padding: 15px;
 
 
 /* CADASTRO */
-
+.img-localizacao {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
 
   
