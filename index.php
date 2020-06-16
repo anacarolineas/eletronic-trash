@@ -69,7 +69,7 @@
         <section id="buscar" class="busca showcase-top">
             <div class="container">
                 <div class="col-12 text-center mt-4">
-                    <h2><strong>Busque as empresas mais próximas a você!</strong></h2>
+                    <h2 class="titulo-busca"><strong>Busque as empresas mais próximas a você!</strong></h2>
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-sm-12 col-md-5 col-lg-5 col-xl-5">
@@ -113,7 +113,7 @@
         <!--saiba+ -->
         <section id="saibaMais" class="saiba-mais">
             <div class="col-md-12 text-center">
-                <h2>Saiba +<br><strong>Notícias e curiosidades</strong></h2>
+                <h2 class="titulo-mais">Saiba +<br><strong>Notícias e curiosidades</strong></h2>
             </div>
 
             <div class="container mt-5">
@@ -121,7 +121,7 @@
                     <div class="col-sm-6">
                         <div class="showcase-left">
                             <h4><strong>Por que o lixo eletrônico é tão prejudical?</strong></h4>
-                            <p>Eletrônicos quando descartados em lixões, podem liberar substâncias tóxicas na água, solo e ar, como por exemplo, chumbo, arsênio, mercúrio, cobre, cádmio e zinco.
+                            <p style="font-size: 14px;">Eletrônicos quando descartados em lixões, podem liberar substâncias tóxicas na água, solo e ar, como por exemplo, chumbo, arsênio, mercúrio, cobre, cádmio e zinco.
                                 Esses materiais podem causar problemas respiratórios e danos ao sistema nervoso, além de prejudicar o meio ambiente. </p>
                         </div>
                     </div>
@@ -136,8 +136,8 @@
                     <div class="col-sm-6">
                         <div class="showcase-left">
                             <h4><strong>Mas afinal, o que é lixo eletrônico?</strong></h4>
-                            <p>Todos os aparelhos que dependem do uso de corrente elétrica ou de campos eletromagnéticos são caracterizados eletrônicos. Existem quatro grupos de classificação:</p>
-                            <ul>
+                            <p style="font-size: 14px;">Todos os aparelhos que dependem do uso de corrente elétrica ou de campos eletromagnéticos são caracterizados eletrônicos. Existem quatro grupos de classificação:</p>
+                            <ul class="item">
                                 <li><strong>Linha branca:</strong> refrigeradores e congeladores, fogões, lavadoras de roupa e louça, secadoras e condicionadores de ar; </li>
                                 <li><strong>Linha marrom:</strong> monitores e televisores de tubo, plasma, LCD e LED, aparelhos de DVD e VHS, equipamentos de áudio e filmadoras;</li>
                                 <li><strong>Linha azul:</strong> batedeiras, liquidificadores, ferros elétricos, furadeiras, secadores de cabelo, espremedores de frutas, aspiradores de pó e cafeteiras;</li>
@@ -151,7 +151,7 @@
                             <p>O processo de reciclagem pode transformar eletrônicos em matéria-prima ou subproduto com valor comercial.
                                 A suacata eletrônica nos fornece materiais que ganham vida nova e geram renda. Abaixo listaremos alguns produtos extraídos de materiais eletrônicos:
                             </p>
-                            <ul>
+                            <ul class="item">
                                 <li><strong>Plásticos:</strong> podem ser reciclados por processo mecânico, químico ou energético;</li>
                                 <li><strong>Estanho e cobre:</strong> podem ser obtidos a partir de placas de circuito eletrônico microcomputadores, pelo processo de lixiviação;</li>
                                 <li><strong>Alumínio:</strong> o processo de reciclagem inclui retirada de impurezas, picotagem e fundição. O material é derretido e transformado em alumínio líquido, base para lingotes ou chapas de alumínio.</li>

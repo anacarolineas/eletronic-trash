@@ -27,9 +27,13 @@ if ($qtd > 0) {
     while ($linha = mysqli_fetch_assoc($query)) {
         $i++;
 ?>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2">
+        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-6">
             <div class="card" style="width: 10rem; height: 10rem;">
-                <img class="card-img-top" src="<?= $linha['link_logo']; ?>" alt="logo empresa">
+                <?php if ($linha['link_logo'] != null) {   ?>
+                    <img class="card-img-top" src="<?= $linha['link_logo']; ?>" alt="logo empresa">
+                <?php } else { ?>
+                    <img class="card-img-top" src="imagens/sem-foto.jpg" alt="logo empresa">
+                <?php } ?>
                 <div class="card-body">
                     <a href="#" data-toggle="modal" data-target="#modal<?= $linha['id_empresa']; ?>">
                         <p class="card-text"><?= $linha['nome']; ?></p>
@@ -56,20 +60,20 @@ if ($qtd > 0) {
                         <p><b>Email: </b>
                             <?php if ($linha['email'] != null) { ?>
                                 </b><a href="<?= $linha['email']; ?>"><?= $linha['email']; ?></a></p>
-                            <?php  } else { ?>
-                                <span>Não informado</span></p>
-                            <?php } ?>
-                        <p><b>Site: </b>
-                                <?php if ($linha['site'] != null) { ?>
+                    <?php  } else { ?>
+                        <span>Não informado</span></p>
+                    <?php } ?>
+                    <p><b>Site: </b>
+                        <?php if ($linha['site'] != null) { ?>
                             </b><a href="<?= $linha['site']; ?>"><?= $linha['site']; ?></a></p>
-                        <?php  } else { ?>
-                            <span>Não informado</span></p>
-                        <?php } ?>
-                        
-                        <?php if ($linha['frame'] != null) {
-                        ?>
-                            <p><iframe src="<?= $linha['frame']; ?>" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
-                        <?php } ?>
+                <?php  } else { ?>
+                    <span>Não informado</span></p>
+                <?php } ?>
+
+                <?php if ($linha['frame'] != null) {
+                ?>
+                    <p><iframe src="<?= $linha['frame']; ?>" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                <?php } ?>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-fechar" data-dismiss="modal">Fechar</button>
