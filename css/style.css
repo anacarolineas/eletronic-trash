@@ -312,6 +312,7 @@ padding: 15px;
   .btn-buscar {
     font-size: 1em;
     width: 100%;
+    padding: 0 5px;
   }
   
   .showcase-left, .titulo-busca, .titulo-mais {
@@ -322,13 +323,13 @@ padding: 15px;
     font-size: 1em;
   }
 
-.showcase-left p {
-  font-size: 1em;
-}
+  .showcase-left p {
+    font-size: 1em;
+  }
 
-.item {
-  font-size: 16px;
-}
+  .item {
+    font-size: 16px;
+  }
 
 }
 
